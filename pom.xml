@@ -18,19 +18,19 @@
     <artifactId>oss-parent</artifactId>
     <version>7</version>
   </parent>
-  <name>jolira-tools SuperPOM</name>
+  <name>jolira SuperPOM</name>
   <description>SuperPOM for all your maven components. Requires GPG code-signing. To run, use 'mvn release:prepare release:perform -DperformRelease=true -Djavax.net.ssl.trustStore=${HOME}/.m2/.keystore -Dgpg.passphrase=password'. Details about working with GPG can be found at http://www.sonatype.com/people/2010/01/how-to-generate-pgp-signatures-with-maven/</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jetty.version>7.3.0.v20110203</jetty.version>
-    <maven-javadoc-plugin.version>2.8</maven-javadoc-plugin.version>
+    <jetty.version>8.1.2.v20120308</jetty.version>
+    <maven-javadoc-plugin.version>2.8.1</maven-javadoc-plugin.version>
   </properties>
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.1</version>
+        <version>2.2.2</version>
       </plugin>
       <plugin>
         <inherited>true</inherited>
@@ -51,7 +51,7 @@
         <inherited>true</inherited>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
-        <version>1.2</version>
+        <version>1.4</version>
         <executions>
           <execution>
             <id>sign-artifacts</id>
@@ -71,7 +71,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-eclipse-plugin</artifactId>
-        <version>2.8</version>
+        <version>2.9</version>
         <inherited>true</inherited>
         <configuration>
           <additionalProjectnatures>
@@ -87,7 +87,7 @@
       <plugin>
         <inherited>true</inherited>
         <artifactId>maven-war-plugin</artifactId>
-        <version>2.1.1</version>
+        <version>2.2</version>
         <configuration>
           <manifest>
             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
@@ -104,7 +104,7 @@
       <plugin>
         <inherited>true</inherited>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>2.3.1</version>
+        <version>2.4</version>
         <configuration>
           <manifest>
             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
@@ -141,7 +141,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.6</version>
+          <version>2.7</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -152,7 +152,7 @@
         <inherited>true</inherited>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
-        <version>2.3.2</version>
+        <version>2.4.0</version>
         <configuration>
           <findbugsXmlOutput>true</findbugsXmlOutput>
         </configuration>
