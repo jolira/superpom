@@ -8,7 +8,6 @@ To run, use
 ```
 mvn release:prepare release:perform \
       -DperformRelease=true \
-      -Djavax.net.ssl.trustStore=${HOME}/.m2/.keystore \
       -Dgpg.passphrase=password
 ```
 
