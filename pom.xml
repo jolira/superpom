@@ -250,6 +250,6 @@
   </developers>
   <issueManagement>
     <system>Google Code</system>
-    <url>http://code.google.com/p/jolira-tools/issues/list</url>
+    <url>https://github.com/jolira/superpom/issues</url>
   </issueManagement>
 </project>
