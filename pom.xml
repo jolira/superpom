@@ -19,7 +19,7 @@
     <version>7</version>
   </parent>
   <name>jolira SuperPOM</name>
-  <description>SuperPOM for all your maven components. Requires GPG code-signing. To run, use 'mvn release:prepare release:perform -DperformRelease=true -Djavax.net.ssl.trustStore=${HOME}/.m2/.keystore -Dgpg.passphrase=password'. Details about working with GPG can be found at http://www.sonatype.com/people/2010/01/how-to-generate-pgp-signatures-with-maven/</description>
+  <description>All our favorite settings for Maven in one convenient file. See http://github.com/jolira/superpom for details.</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jetty.version>8.1.2.v20120308</jetty.version>
@@ -221,7 +221,7 @@
       </build>
     </profile>
   </profiles>
-  <url>http://jolira-tools.googlecode.com/</url>
+  <url>http://jolira.github.com/</url>
   <mailingLists>
     <mailingList>
       <name>Announcements</name>
