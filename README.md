@@ -1,5 +1,5 @@
-jolira superPOM [<img src="https://secure.travis-ci.org/jolira/superpom.png" />](http://travis-ci.org/#!/jolira/superpom)
-=========================
+jolira superPOM [![Build Status](https://secure.travis-ci.org/jolira/superpom.png?branch=master)](http://travis-ci.org/jolira/superpom)
+=====================================================================================================================
 
 SuperPOM for all your maven components. Requires GPG code-signing.
 
