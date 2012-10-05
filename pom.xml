@@ -22,21 +22,21 @@
   <description>All our favorite settings for Maven in one convenient file. See http://github.com/jolira/superpom for details.</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jetty.version>8.1.2.v20120308</jetty.version>
-    <maven-javadoc-plugin.version>2.8.1</maven-javadoc-plugin.version>
+    <jetty.version>8.1.7.v20120910</jetty.version>
+    <maven-javadoc-plugin.version>2.9</maven-javadoc-plugin.version>
   </properties>
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.2.2</version>
+        <version>2.3.2</version><!--$NO-MVN-MAN-VER$-->
       </plugin>
       <plugin>
         <inherited>true</inherited>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>2.1.2</version>
+        <version>2.2</version>
         <executions>
           <execution>
             <id>attach-sources</id>
@@ -72,7 +72,7 @@
       <plugin>
         <inherited>true</inherited>
         <artifactId>maven-war-plugin</artifactId>
-        <version>2.2</version>
+        <version>2.3</version>
         <configuration>
           <manifest>
             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
@@ -107,7 +107,7 @@
         <inherited>true</inherited>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.3.2</version>
+        <version>2.5.1</version>
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
@@ -137,7 +137,7 @@
         <inherited>true</inherited>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
-        <version>2.4.0</version>
+        <version>2.5.2</version>
         <configuration>
           <findbugsXmlOutput>true</findbugsXmlOutput>
         </configuration>
@@ -146,7 +146,7 @@
         <inherited>true</inherited>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>cobertura-maven-plugin</artifactId>
-        <version>2.5.1</version>
+        <version>2.5.2</version>
         <configuration>
           <format>xml</format>
         </configuration>
@@ -155,14 +155,14 @@
         <inherited>true</inherited>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>${maven-javadoc-plutin.version}</version>
+        <version>${maven-javadoc-plugin.version}</version>
         <configuration>
           <source>1.6</source>
-          <doclet>gr.spinellis.umlgraph.doclet.UmlGraphDoc</doclet>
+          <doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
           <docletArtifact>
-            <groupId>gr.spinellis</groupId>
-            <artifactId>UmlGraph</artifactId>
-            <version>4.6</version>
+            <groupId>org.umlgraph</groupId>
+            <artifactId>doclet</artifactId>
+            <version>5.6</version>
           </docletArtifact>
           <additionalparam> -inferrel -inferdep -quiet -hide java.*
             -collpackages java.util.* -qualify -postfixpackage
@@ -241,11 +241,6 @@
       <id>jfk</id>
       <name>Joachim Kainz</name>
       <email>jfk@jolira.com</email>
-    </developer>
-    <developer>
-      <id>gabe</id>
-      <name>Gabe Hopper</name>
-      <email>gabe@jolira.com</email>
     </developer>
   </developers>
   <issueManagement>
