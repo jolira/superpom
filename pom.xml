@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jolira</groupId>
   <artifactId>superpom</artifactId>
-  <version>1.2.1-SNAPSHOT</version>
+  <version>1.2.1</version>
   <packaging>pom</packaging>
   <licenses>
     <license>
@@ -235,6 +235,7 @@
     <connection>scm:git:git@github.com:jolira/superpom.git</connection>
     <developerConnection>scm:git:git@github.com:jolira/superpom.git</developerConnection>
     <url>http://github.com/jolira/superpom</url>
+    <tag>superpom-1.2.1</tag>
   </scm>
   <developers>
     <developer>
